@@ -11,13 +11,17 @@ const CardComponent = () => {
   return (
     <Card className="login">
       <CardBody>
-        <CardTitle tag="h5">Card title</CardTitle>
+        <CardTitle tag="h5">login</CardTitle>
         <CardSubtitle tag="h6" className="mb-2 text-muted">
-          Card subtitle
+          Liz
         </CardSubtitle>
         <CardText>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+         <form>
+         <label for='email' name='email'>E-mail</label>
+         <input type="email" name="email" id="exampleEmail" placeholder="Email" /><br></br>
+         <label for="examplePassword" name='password'>Password</label>
+        <input type="password" name="password" id="examplePassword" placeholder="Password" />
+         </form>
         </CardText>
         <Button>Button</Button>
       </CardBody>
