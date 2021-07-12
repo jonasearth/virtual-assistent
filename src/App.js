@@ -8,7 +8,7 @@ import {
   Col,
   Row,
 } from "reactstrap";
-import HorizontalFormIcons from "./views/HorizontalFormIcons";
+import  CardLogin from "./views/CardLogin";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           sm={12}
           className="offset-md-2 d-flex justify-content-center offset-xl-4 offset-lg-4"
         >
-          <HorizontalFormIcons />
+          < CardLogin />
         </Col>
       </Row>
     </Container>

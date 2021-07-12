@@ -16,7 +16,7 @@ import {
 } from "reactstrap";
 import { User, Mail, Smartphone, Lock } from "react-feather";
 
-const HorizontalFormIcons = () => {
+const CardLogin = () => {
   return (
     <Card className='box'>
       <CardHeader>
@@ -75,4 +75,4 @@ const HorizontalFormIcons = () => {
     </Card>
   );
 };
-export default HorizontalFormIcons;
+export default CardLogin;
