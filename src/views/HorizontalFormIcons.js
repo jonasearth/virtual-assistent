@@ -18,21 +18,19 @@ import { User, Mail, Smartphone, Lock } from "react-feather";
 
 const HorizontalFormIcons = () => {
   return (
-    <Card>
+    <Card className='box'>
       <CardHeader>
-        <CardTitle tag="h4">Horizontal Form with Icons</CardTitle>
+        <CardTitle tag="h4">Assistente virtual Liz</CardTitle>
       </CardHeader>
       <CardBody>
         <Form>
           <FormGroup row>
-            <Label sm="3" for="EmailIcons">
-              Email
-            </Label>
-            <Col sm="9">
-              <InputGroup className="input-group-merge">
+           
+            <Col sm="12">
+              <InputGroup className="pb-3">
                 <InputGroupAddon addonType="prepend">
                   <InputGroupText>
-                    <Mail size={15} />
+                    <Mail size={24} />
                   </InputGroupText>
                 </InputGroupAddon>
                 <Input
@@ -40,20 +38,19 @@ const HorizontalFormIcons = () => {
                   name="Email"
                   id="EmailIcons"
                   placeholder="Email"
+                  className="pr-2"
                 />
               </InputGroup>
             </Col>
           </FormGroup>
 
           <FormGroup row>
-            <Label sm="3" for="passwordIcons">
-              Password
-            </Label>
-            <Col sm="9">
-              <InputGroup className="input-group-merge">
+           
+            <Col sm="12">
+              <InputGroup className="pb-2">
                 <InputGroupAddon addonType="prepend">
                   <InputGroupText>
-                    <Lock size={15} />
+                    <Lock size={24} />
                   </InputGroupText>
                 </InputGroupAddon>
                 <Input
@@ -66,8 +63,8 @@ const HorizontalFormIcons = () => {
             </Col>
           </FormGroup>
 
-          <FormGroup className="mb-0" row>
-            <Col className="d-flex" md={{ size: 9, offset: 3 }}>
+          <FormGroup className="mb-1" row>
+            <Col className="d-flex  justify-content-center" md={{ size: 6, offset: 3 }}>
               <Button className="mr-1" color="primary" type="submit">
                 Submit
               </Button>

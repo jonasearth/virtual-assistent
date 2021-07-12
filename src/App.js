@@ -19,7 +19,7 @@ function App() {
           lg={4}
           md={8}
           sm={12}
-          className="offset-md-2 offset-xl-4 offset-lg-4"
+          className="offset-md-2 d-flex justify-content-center offset-xl-4 offset-lg-4"
         >
           <HorizontalFormIcons />
         </Col>
