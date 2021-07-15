@@ -15,12 +15,25 @@ import {
   InputGroupText,
 } from "reactstrap";
 import { User, Mail, Smartphone, Lock } from "react-feather";
+import { useState } from "react";
 
 const CardLogin = () => {
+
+  const [email,SetEmail] =useState('')
+
+ const  submitForm = (e) =>{
+
+   e.preventDefault();
+
+   SetEmail(document.getElementById("EmailIcon").value);
+   console.log("email");
+
+  
+  }
   return (
     <Card className='box'>
       <CardHeader>
-        <CardTitle tag="h4">Assistente virtual Liz</CardTitle>
+        <CardTitle tag="h4">{email}</CardTitle>
       </CardHeader>
       <CardBody>
         <Form>
@@ -39,6 +52,8 @@ const CardLogin = () => {
                   id="EmailIcons"
                   placeholder="Email"
                   className="pr-2"
+                  value={email}
+                  onInput={(e)=>SetEmail(e.target.value)}
                 />
               </InputGroup>
             </Col>
@@ -65,7 +80,7 @@ const CardLogin = () => {
 
           <FormGroup className="mb-1" row>
             <Col className="d-flex  justify-content-center" md={{ size: 6, offset: 3 }}>
-              <Button className="mr-1" color="primary" type="submit">
+              <Button className="mr-1" color="primary" type="submit" value={email} onClick={e =>submitForm(e.target.value)}>
                 Submit
               </Button>
             </Col>
